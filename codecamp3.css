@@ -1,0 +1,207 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background: black;
+    margin: 0;
+    color: aliceblue;
+}
+h2 {
+    text-align: center;
+    font-family: 'Major Mono Display', monospace;
+    color: gold;
+}
+h3 {
+    font-family: 'Major Mono Display', monospace;
+    color: gold;
+}
+p {
+    font-family: 'Inconsolata', monospace;
+}
+/*HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER*/
+#header {
+    background: white;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#header-img {
+    width: 220px;
+    height: 45px;
+    margin-left: 20px;
+    color: black;
+}
+ul {
+    
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    
+    font-family: 'Major Mono Display', monospace;
+    margin: 0 20px;;
+}
+a {
+    text-justify: none;
+    font-family: 'Major Mono Display', monospace;
+    text-decoration: none;
+    color: black;
+}
+/*EMAIL EMAIL EMAIL EMAIL EMAIL EMAIL EMAIL EMAIL EMAIL EMAIL EMAIL*/
+#email-box {
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+#email {
+    margin-top: 5%;
+    background: none;
+    width: 250px;
+    height: 40px;
+    border-width: 0;
+    border-bottom: 2px solid gold;
+    color: gold;
+    font-family: 'Inconsolata', monospace;
+    font-size: 20px;
+}
+#email:focus {
+    border-bottom: none;
+    box-shadow: 0 0 10px yellow;
+}
+#form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#submit {
+    margin-top: 10%;
+    background-color: rgba (0, 0, 0, .1);
+}
+/*PRODUCTS PRODUCTS PRODUCTS PRODUCTS PRODUCTS PRODUCTS PRODUCTS PRODUCTS*/
+.main {
+    display: flex;
+    margin: 5% 20%;
+}
+.featuresLogo {
+    display: flex;
+    flex: 2;
+    justify-content: center;
+    align-items: center;
+}
+.logo {
+    width: 50px;
+    height: 50px;
+}
+.featuresText {
+    flex: 8;
+    justify-content: flex-start;
+}
+/*VIDEO VIDEO VIDEO VIDEO VIDEO VIDEO VIDEO VIDEO VIDEO VIDEO VIDEO VIDEO*/
+#videoSection {
+    text-align: center;
+    height: 500px;
+    justify-content: space-around;
+}
+#video {
+    margin-top: 50px;
+}
+/*PRICE PRICE PRICE PRICE PRICE PRICE PRICE PRICE PRICE PRICE PRICE PRICE*/
+#mainPrice {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+}
+.blocks {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.priceBlock {
+    display: flex;
+    flex-direction: column;
+    border: 5px solid white;
+    width: 20%;
+    height: 300px;
+    color: aliceblue;
+}
+.airpods {
+    background-image: linear-gradient(115deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.4)), url(images/AirPods.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+.watch {
+    background-image: linear-gradient(115deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.4)) ,url(images/6734fba7cc0f2f5313490b3c57e0dc63.png);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+.iphone {
+    background-image: linear-gradient(115deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.4)), url(images/sddefault.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+.price {
+    width: 100%;
+    flex: 1;
+}
+.mark {
+    flex: 2;
+    width: 100%;
+    
+}
+.buy {
+    width: 100%;
+    flex: 1;
+}
+.button {
+    font-family: 'Inconsolata', monospace;
+    height: 30px;
+    width: 200px;
+    color: gold;
+    background: none;
+    border: 0;
+    font-size: 20px;
+    text-shadow: 0 0 10px yellow;
+    box-shadow: 0 0 10px yellow;
+    border-radius: 10px;
+}
+/*FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER */
+footer {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 70px;
+    background-color: white;
+    color: black;
+}
+/*MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA*/
+@media (max-width: 535px) {
+    header{
+        flex-direction: column;
+    }
+    ul {
+        font-size: 10px;
+        flex-direction: column;
+    }
+    #header-img {
+        width: 220px;
+        height: 45px;
+    }
+    #email-box {
+        margin-top: 200px;
+    }
+}
