@@ -33,7 +33,6 @@ p {
     color: black;
 }
 ul {
-    
     display: flex;
     list-style-type: none;
     padding: 0;
@@ -68,6 +67,7 @@ a {
     color: gold;
     font-family: 'Inconsolata', monospace;
     font-size: 20px;
+    padding-left: 5px;
 }
 #email:focus {
     border-bottom: none;
@@ -164,10 +164,12 @@ a {
     width: 100%;
     
 }
+
 .buy {
     width: 100%;
     flex: 1;
 }
+
 .button {
     font-family: 'Inconsolata', monospace;
     height: 30px;
@@ -180,13 +182,17 @@ a {
     box-shadow: 0 0 10px yellow;
     border-radius: 10px;
 }
+
+.button:hover {
+    transform: scale(1.1);
+}
 /*FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER */
 footer {
     display: flex;
     justify-content: flex-end;
     padding-right: 70px;
-    background-color: white;
-    color: black;
+    background-color: rgb(255, 255, 255);
+    color: rgba(95, 0, 0, 0.5);
 }
 /*MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA*/
 @media (max-width: 535px) {
